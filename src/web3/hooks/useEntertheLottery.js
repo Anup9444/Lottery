@@ -77,7 +77,7 @@ export const useEnterthelottery = (
     if (isMined) {
       toast.success(`Successfully bought ${uniqueTicket.length} tikets`);
     }
-  }, [error, isMined]);
+  }, [error, isMined, uniqueTicket.length]);
 
   return {
     hash,

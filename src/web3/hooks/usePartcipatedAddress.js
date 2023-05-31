@@ -1,9 +1,9 @@
-import { useContractRead, useNetwork } from "wagmi";
+import { useContractRead } from "wagmi";
 import { ABI } from "../Assets/ABI";
 import { Assets } from "../Assets/assets";
 
 export function useParticipatedAddress(round) {
-  const { chain } = useNetwork();
+  // const { chain } = useNetwork();
   let chainId;
 
   // if (chain) chainId = chain.id
