@@ -3,7 +3,6 @@ import { erc20ABI } from "wagmi";
 import { Assets } from "../Assets/assets";
 import { useContractRead, useNetwork } from "wagmi";
 import { useAccount } from "wagmi";
-import React from "react";
 
 // Function to check allowance
 export function useAllowance(amount) {

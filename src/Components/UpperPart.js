@@ -18,13 +18,13 @@ const UpperPart = () => {
   return (
     <div className="Header">
       <div>
-        <img src={JackPot} className="jackPotImage" />
+        <img alt="#" src={JackPot} className="jackPotImage" />
       </div>
       <div className="headerRight">
         <div className="noOfJAckpot">
           <p className="jktext">{data && <span>{data.formatted}</span>}</p>
         </div>
-        <img src={tether} className="tetherImage" />
+        <img alt="#" src={tether} className="tetherImage" />
       </div>
     </div>
   );

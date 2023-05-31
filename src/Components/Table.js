@@ -40,7 +40,7 @@ const ListOfPlayers = ({ round, setNumberOfPlayer, setNumberOfTickets }) => {
     if (listOfTickets) {
       setNumberOfTickets(listOfTickets.length);
     }
-  }, [data, listOfTickets]);
+  }, [data, listOfTickets, setNumberOfPlayer, setNumberOfTickets]);
 
   if (isLoading) {
     return <p className="errortext">- - -- - - -- - - - </p>;

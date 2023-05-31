@@ -1,9 +1,9 @@
-import { useContractRead, useNetwork } from "wagmi";
+import { useContractRead } from "wagmi";
 import { ABI } from "../Assets/ABI";
 import { Assets } from "../Assets/assets";
 
 export function useGetReadData() {
-  const { chain } = useNetwork();
+  // const { chain } = useNetwork();
   // const chainId = chain.id ;
   const chainId = 80001;
   const lotteryPaycontract = Assets[chainId].lotteryPaycontract;
@@ -29,7 +29,7 @@ export function useGetReadData() {
     chainId: chainId,
   });
 
-  const error = error1 || error2;
+  const error = error1 || error2 || error3;
   const bigCurrentRound = data;
   return { entryFee, mode, bigCurrentRound, error, isLoading };
 }
