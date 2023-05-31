@@ -1,0 +1,34 @@
+.Table{
+    padding: clamp(10px , 2.5vw , 30px);
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-block: max(2vw , 20px) ;
+    background-color: white;
+}
+
+.tableListTopic{
+    font-size: clamp(1.2rem , 2vw , 2rem);
+    width: 90%;
+    background-color: rgb(252, 205, 117);
+    margin-inline: auto;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 20px;
+}
+
+.actualList{
+    width: 90%;
+    margin-inline:auto ;
+    border-radius: 30px;
+    border: 1px solid black;
+    margin-block:  max(2vw , 20px);
+}
+
+.actualList li {
+    margin-block: 5px;
+    font-weight: 500;
+}
+.errortext{
+    text-align: center;
+    color: brown;
+}
