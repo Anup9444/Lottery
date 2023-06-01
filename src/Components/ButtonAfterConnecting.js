@@ -41,8 +41,12 @@ const ButtonAfterConnecting = () => {
 
   const handleNumberOfTicketsChange = (event) => {
     if (event.target.value > 10 || event.target.value <= 0) return;
-    setNumberOfTickets(event.target.value);
-    setUniqueTicket(generateUniqueIds(event.target.value));
+    try {
+      setNumberOfTickets(event.target.value);
+      setUniqueTicket(generateUniqueIds(event.target.value));
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -117,6 +121,7 @@ const ButtonAfterConnecting = () => {
 };
 
 const GetRoundsAndValue = ({ Tickets, balance }) => {
+  console.log("Tickets , balance", Tickets, balance);
   const { bigCurrentRound, entryFee, mode } = useGetReadData();
   React.useEffect(() => {
     if (Tickets.length * Number(entryFee) > Number(balance)) {
