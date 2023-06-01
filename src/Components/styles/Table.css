@@ -3,7 +3,7 @@
     border: 1px solid black;
     border-radius: 50px;
     margin-block: max(2vw , 20px) ;
-    background-color: white;
+    background-color: rgb(245, 239, 239);
 }
 
 .tableListTopic{

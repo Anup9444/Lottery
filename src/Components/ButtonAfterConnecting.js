@@ -95,7 +95,7 @@ const ButtonAfterConnecting = () => {
         ) : (
           <button type="button" className="actualButton address" disabled>
             <div className="ticketsProps">
-              <img alt="#" src={ticket} width={70}></img>alt ="#"
+              <img alt="#" src={ticket} width={70}></img>
               <span>Buy Tickets</span>
             </div>
           </button>
@@ -149,7 +149,7 @@ const GetRoundsAndValue = ({ Tickets, balance }) => {
   return (
     <button type="button" className="actualButton address" disabled>
       <div className="ticketsProps">
-        <img alt="#" src={ticket} width={70}></img>alt ="#"
+        <img alt="#" src={ticket} width={70}></img>
         <span>Buy Tickets</span>
       </div>
     </button>
@@ -224,7 +224,7 @@ const LotteryentryButton = ({ uniqueTicket, currentRound, entryFee, mode }) => {
     return (
       <button type="button" className="actualButton address" disabled>
         <div className="ticketsProps">
-          <img alt="#" src={ticket} width={70}></img>alt ="#"
+          <img alt="#" src={ticket} width={70}></img>
           <span>Buy Tickets</span>
         </div>
       </button>
@@ -233,7 +233,7 @@ const LotteryentryButton = ({ uniqueTicket, currentRound, entryFee, mode }) => {
   return (
     <button type="button" className="actualButton address" onClick={enter}>
       <div className="ticketsProps">
-        <img alt="#" src={ticket} width={70}></img>alt ="#"
+        <img alt="#" src={ticket} width={70}></img>
         <span>
           {isMining && "Processing transaction..."}
           {isWriting && "Redirecting to wallet..."}

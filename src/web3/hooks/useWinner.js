@@ -28,8 +28,9 @@ export function useGetReadData() {
     functionName: "entryFee",
     chainId: chainId,
   });
-
   const error = error1 || error2 || error3;
   const bigCurrentRound = data;
+  console.log(entryFee, mode, bigCurrentRound, lotteryPaycontract);
+
   return { entryFee, mode, bigCurrentRound, error, isLoading };
 }

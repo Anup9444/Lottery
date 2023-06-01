@@ -11,11 +11,13 @@ function Table() {
   return (
     <div className="Table">
       <div className="tableListTopic">
-        List Of Players(Total player {numberofPlayer})
+        <span> List Of Players( Total player :</span> {numberofPlayer}
+        <span> )</span>
       </div>
       <br></br>
       <div className="tableListTopic">
-        Total Tickets Bought:{numberofTickets}
+        <span>Total Tickets Bought:</span>
+        {numberofTickets}
       </div>
       <div className="actualList">
         {bigCurrentRound && (
@@ -55,7 +57,9 @@ const ListOfPlayers = ({ round, setNumberOfPlayer, setNumberOfTickets }) => {
     <ul>
       {data.map((items, index) => (
         <li key={index}>
-          <a href={`https://bscscan.com/address/${items}`}>{items}</a>
+          <span>
+            <a href={`https://bscscan.com/address/${items}`}>{items}</a>
+          </span>
         </li>
       ))}
     </ul>
