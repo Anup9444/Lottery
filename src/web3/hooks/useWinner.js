@@ -30,7 +30,7 @@ export function useGetReadData() {
   });
   const error = error1 || error2 || error3;
   const bigCurrentRound = data;
-  console.log(entryFee, mode, bigCurrentRound, lotteryPaycontract);
+  console.log(entryFee, mode, bigCurrentRound, error, lotteryPaycontract);
 
   return { entryFee, mode, bigCurrentRound, error, isLoading };
 }
