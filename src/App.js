@@ -22,7 +22,8 @@ const { chains, publicClient } = configureChains(
     alchemyProvider({ apiKey: "jJ633_2HWYLir7LFxjymvxZSl1fH59tg" }),
     jsonRpcProvider({
       rpc: (chain) => {
-        if (chain.id !== bsc.id) return null;
+        if (chain.id === 56)
+          return { http: "https://bsc-dataseed.binance.org" };
         return { http: chain.rpcUrls.default };
       },
     }),
