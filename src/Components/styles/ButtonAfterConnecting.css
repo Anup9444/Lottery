@@ -47,6 +47,7 @@ span {
     border: 2px solid black;
     color: white;
 }
+
 .disablebutton{
     color: rgb(112, 104, 104);}
     
@@ -60,7 +61,7 @@ button{
 }
 
 .chainName{
-    background: rgba(43, 199, 12, 0.89);
+    background: rgba(95, 196, 236, 0.89);
 }
 
 .address{

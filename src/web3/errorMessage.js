@@ -5,11 +5,9 @@ export const errorMessages = (error) => {
   }
 
   const walletError = error;
-  console.log(error);
   if (walletError["reason"]) {
     // runs when SmartContract reverts the transactions, when the connected user rejects the transaction from wallet and when arguments passed are incorrect
     const error = walletError.reason.replace("execution reverted: ", "");
-    console.log(3);
 
     return error.charAt(0).toUpperCase() + error.slice(1);
   }
