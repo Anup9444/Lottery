@@ -56,7 +56,7 @@ const ButtonAfterConnecting = () => {
           <div className="tokencontainer">
             <p className="tokensdata">
               {" "}
-              {!isLoading ? data && data.formatted : <>-----</>}
+              {!isLoading ? data && data.formatted.toFixed(2) : <>-----</>}
               <span className="tokenName">USDT</span>
             </p>
             <button
