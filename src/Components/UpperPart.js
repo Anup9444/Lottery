@@ -15,6 +15,7 @@ const UpperPart = () => {
     token: USDTAddress,
     chainId: supportedNetwork,
   });
+
   return (
     <div className="Header">
       <div>
