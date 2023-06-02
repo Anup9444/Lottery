@@ -23,9 +23,7 @@ export const useEnterthelottery = (
   const { chain } = useNetwork();
   const chainId = chain.id;
   const lotteryPaycontract = Assets[chainId].lotteryPaycontract;
-  const totalEntryFee = BigNumber.from(uniqueTicket.length).mul(
-    Number(entryFee)
-  );
+  const totalEntryFee = BigNumber.from(uniqueTicket.length).mul(entryFee);
   let transaction;
   if (mode === 0) {
     transaction = {
