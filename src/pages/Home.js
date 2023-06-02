@@ -12,7 +12,7 @@ const Home = () => {
     <div className="Home">
       <UpperPart />
       {isConnected ? (
-        chain.id === 56 || chain.id === 80001 ? (
+        chain.id === 56 ? (
           <ButtonAfterConnecting />
         ) : (
           <ChangeNetworkButton />

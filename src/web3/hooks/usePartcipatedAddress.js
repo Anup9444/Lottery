@@ -7,7 +7,7 @@ export function useParticipatedAddress(round) {
   let chainId;
 
   // if (chain) chainId = chain.id
-  chainId = 80001;
+  chainId = 56;
   const lotteryPaycontract = Assets[chainId].lotteryPaycontract;
 
   const { data, error, isLoading } = useContractRead({

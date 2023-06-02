@@ -10,14 +10,14 @@ import {
   RainbowKitProvider,
 } from "@rainbow-me/rainbowkit";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
-import { bsc, polygonMumbai } from "wagmi/chains";
+import { bsc } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 import Home from "./pages/Home";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const { chains, publicClient } = configureChains(
-  [bsc, polygonMumbai],
+  [bsc],
   [
     alchemyProvider({ apiKey: "jJ633_2HWYLir7LFxjymvxZSl1fH59tg" }),
     jsonRpcProvider({

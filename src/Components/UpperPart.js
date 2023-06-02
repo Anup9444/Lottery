@@ -6,7 +6,7 @@ import { Assets } from "../web3/Assets/assets.js";
 import { useBalance } from "wagmi";
 
 const UpperPart = () => {
-  const supportedNetwork = 80001;
+  const supportedNetwork = 56;
   const lotteryContract = Assets[supportedNetwork].lotteryPaycontract;
   const USDTAddress = Assets[supportedNetwork].USDTTokenAddress;
 

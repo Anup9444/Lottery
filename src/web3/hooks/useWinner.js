@@ -3,9 +3,7 @@ import { ABI } from "../Assets/ABI";
 import { Assets } from "../Assets/assets";
 
 export function useGetReadData() {
-  // const { chain } = useNetwork();
-  // const chainId = chain.id ;
-  const chainId = 80001;
+  const chainId = 56;
   const lotteryPaycontract = Assets[chainId].lotteryPaycontract;
 
   const { data, error1, isLoading } = useContractRead({
