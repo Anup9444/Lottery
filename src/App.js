@@ -10,24 +10,14 @@ import {
   RainbowKitProvider,
 } from "@rainbow-me/rainbowkit";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
-import { bsc } from "wagmi/chains";
+import { polygon } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
-import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 import Home from "./pages/Home";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const { chains, publicClient } = configureChains(
-  [bsc],
-  [
-    alchemyProvider({ apiKey: "jJ633_2HWYLir7LFxjymvxZSl1fH59tg" }),
-    jsonRpcProvider({
-      rpc: (chain) => {
-        if (chain.id === 56)
-          return { http: "https://bsc-dataseed.binance.org" };
-        return { http: chain.rpcUrls.default };
-      },
-    }),
-  ]
+  [polygon],
+  [alchemyProvider({ apiKey: "9yeg9MytXGwwgw8B8MVj3fnUPEjiRxGU" })]
 );
 
 const connectors = connectorsForWallets([

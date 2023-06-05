@@ -11,12 +11,12 @@ function Table() {
   return (
     <div className="Table">
       <div className="tableListTopic">
-        <span> List Of Players( Total player :</span> {numberofPlayer}
+        <span> List Of Players( Total players :</span> {numberofPlayer}
         <span> )</span>
       </div>
       <br></br>
       <div className="tableListTopic">
-        <span>Total Tickets Bought:</span>
+        <span>Total Tickets Bought : </span>
         {numberofTickets}
       </div>
       <div className="actualList">
@@ -58,7 +58,7 @@ const ListOfPlayers = ({ round, setNumberOfPlayer, setNumberOfTickets }) => {
       {data.map((items, index) => (
         <li key={index}>
           <span>
-            <a href={`https://bscscan.com/address/${items}`}>{items}</a>
+            <a href={`https://polygonscan.com/address/${items}`}>{items}</a>
           </span>
         </li>
       ))}

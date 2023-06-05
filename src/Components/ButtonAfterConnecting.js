@@ -3,7 +3,7 @@ import { useAccountModal, useChainModal } from "@rainbow-me/rainbowkit";
 import "./styles/ButtonAfterConnecting.css";
 import { useNetwork } from "wagmi";
 import { useAccount } from "wagmi";
-import bscImage from "../web3/Assets/Image/bscImage.png";
+import bscImage from "../web3/Assets/Image/polygon.png";
 import { useGetReadData } from "../web3/hooks/useWinner";
 import { useEnterthelottery } from "../web3/hooks/useEntertheLottery";
 import { useAllowance } from "../web3/hooks/UseAllowance";
@@ -76,22 +76,24 @@ const ButtonAfterConnecting = () => {
       <div className="connectedButton chainName">
         {openChainModal && (
           <>
-            {chain.id === 56 ? (
+            {chain.id === 137 ? (
               <button
                 onClick={openChainModal}
                 type="button"
                 className="actualButton address"
               >
-                <img alt="#" src={bscImage} className="bscImage" />
-                <span>Binance Smart Chain</span>
+                <div className="ticketsProps">
+                  <img alt="#" src={bscImage} className="bscImage" />
+                  <span className="polygonBuyTickets">Polygon Mainnet</span>
+                </div>
               </button>
             ) : (
               <button
-                onClick={() => switchNetwork?.(56)}
+                onClick={() => switchNetwork?.(137)}
                 type="button"
                 className="actualButton address"
               >
-                <span>Switch to Binance Chain</span>
+                <span className="polygonBuyTickets">Switch to Polygon</span>
               </button>
             )}
           </>
@@ -104,14 +106,14 @@ const ButtonAfterConnecting = () => {
           <button type="button" className="actualButton address" disabled>
             <div className="ticketsProps">
               <img alt="#" src={ticket} width={70}></img>
-              <span>Buy Tickets</span>
+              <span className="polygonBuyTickets">Buy Tickets</span>
             </div>
           </button>
         )}
       </div>
       <div className="connectedButton amountOfTickets">
         <label>
-          <span>Amount Of Tickets</span>
+          <span className="amountoftickets">Amount Of Tickets</span>
           <input
             type="number"
             value={numberOfTickets}

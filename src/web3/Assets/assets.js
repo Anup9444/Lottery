@@ -1,11 +1,10 @@
 export const Assets = {
   //BSC chain
-  56: {
-    networkName: "BSC",
+  137: {
+    networkName: "Polygon",
     isMainnet: true,
-    lotteryPaycontract: "0xf69A140123772ACE64f52dd74e202E5C1aDD44b6", // need to deploy
-    blockExplorer: "https://bscscan.com/",
-    USDTTokenAddress: "0x55d398326f99059fF775485246999027B3197955",
-    decimal: 18,
+    lotteryPaycontract: "0x8711b287CDff134AF4843F2cC6C2967a238a5f61", // need to deploy
+    USDTTokenAddress: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+    decimal: 6,
   },
 };
