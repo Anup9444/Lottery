@@ -12,7 +12,7 @@ const Home = () => {
     <div className="Home">
       <UpperPart />
       {isConnected ? (
-        chain.id === 56 ? (
+        chain.id === 137 ? (
           <ButtonAfterConnecting />
         ) : (
           <ChangeNetworkButton />
@@ -32,11 +32,11 @@ const ChangeNetworkButton = () => {
   const { switchNetwork } = useSwitchNetwork();
   return (
     <button
-      onClick={() => switchNetwork?.(56)}
+      onClick={() => switchNetwork?.(137)}
       type="button"
       className="ConnectWallet"
     >
-      Click to switch into BSC Network
+      Click to switch into Polygon Network
     </button>
   );
 };

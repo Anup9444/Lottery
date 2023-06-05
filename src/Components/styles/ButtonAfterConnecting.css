@@ -1,3 +1,5 @@
+
+
 .ModalContainer{
     display: flex;
     flex-direction: row;
@@ -60,8 +62,17 @@ button{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.polygonBuyTickets{
+    font-family: 'EB Garamond', serif ;
+
+}
+
 .chainName{
     background: rgba(95, 196, 236, 0.89);
+
+}
+.amountOfTickets{
+    font-size: 1.3rem;
 }
 
 .address{
