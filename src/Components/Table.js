@@ -51,7 +51,7 @@ const ListOfPlayers = ({ round, setNumberOfPlayer, setNumberOfTickets }) => {
     return <p className="errortext">Error while retrieving List of player</p>;
   }
   if (data.length === 0) {
-    return <p className="errortext">No any Participate at the moment</p>;
+    return <p className="NoParticipent">No any Participate at the moment</p>;
   }
   return (
     <ul>
